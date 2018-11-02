@@ -8,6 +8,14 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+  
+  # app will not send mails from test
+  config.action_mailer.delivery_method = :test
+  
+  # # app will not send mails from test
+  # config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.default_url_options = { :host => 'https://thecompleterubyonrails-chripas88.c9users.io'}
 
   # Show full error reports.
   config.consider_all_requests_local = true
