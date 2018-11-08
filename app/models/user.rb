@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_one :payment
   # during user sign up registrations - new form will hit users and payments table
   accepts_nested_attributes_for :payment
+  has_many :images
 end
